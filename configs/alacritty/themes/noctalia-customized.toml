@@ -1,0 +1,37 @@
+# Colors (Nord)
+# Default colors (applied by noctalia) are commented out
+
+[colors.bright]
+black = '#8e9aa0'
+# black = '#596377'
+blue = '#81a1c1'
+cyan = '#8fbcbb'
+green = '#a3be8c'
+magenta = '#b48ead'
+red = '#bf616a'
+white = '#eceff4'
+yellow = '#ebcb8b'
+
+[colors.cursor]
+cursor = '#eceff4'
+text = '#282828'
+
+[colors.normal]
+black = '#3b4252'
+blue = '#81a1c1'
+cyan = '#88c0d0'
+green = '#b3ce9c'
+# green = '#a3be8c'
+magenta = '#b48ead'
+red = '#ff717a'
+# red = '#bf616a'
+white = '#e5e9f0'
+yellow = '#ebcb8b'
+
+[colors.primary]
+background = '#2e3440'
+foreground = '#ffffff'
+
+[colors.selection]
+background = '#eceff4'
+text = '#4c566a'

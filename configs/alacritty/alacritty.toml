@@ -1,0 +1,8 @@
+[general]
+import = ["themes/noctalia-customized.toml"]
+
+[terminal]
+shell = "zsh"
+
+[font]
+normal = { family = "monospace" }
