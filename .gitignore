@@ -1,6 +1,4 @@
 # Noctalia
-configs/*
-!configs/noctalia
 configs/noctalia/*
 !configs/noctalia/settings.json
 !configs/noctalia/colors.json

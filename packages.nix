@@ -4,7 +4,6 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.niri.enable = true;
-  programs.git.enable = true;
   programs.throne.enable = true;
   programs.firefox.enable = true;
   programs.htop.enable = true;
@@ -28,6 +27,12 @@
       enable = true;
       plugins = [ "git" ];
       theme = "robbyrussell";
+    };
+  };
+  programs.git = {
+    enable = true;
+    config = {
+      core.symlinks = true;
     };
   };
 
