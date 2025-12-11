@@ -8,7 +8,12 @@
   programs.firefox.enable = true;
   programs.htop.enable = true;
   programs.vscode.enable = true;
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
   programs.thunar = {
     enable = true;
   };
@@ -42,6 +47,9 @@
     ayugram-desktop
     discord
     obsidian
+
+    # Games
+    steam-run
 
     # Noctalia shell
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
