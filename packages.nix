@@ -8,6 +8,7 @@
   programs.firefox.enable = true;
   programs.htop.enable = true;
   programs.vscode.enable = true;
+  programs.steam.enable = true;
   programs.thunar = {
     enable = true;
   };
@@ -39,6 +40,7 @@
   environment.systemPackages = with pkgs; [
     # General
     ayugram-desktop
+    discord
     obsidian
 
     # Noctalia shell
@@ -56,8 +58,8 @@
 
     # Coding
     jetbrains.idea-community-bin
-    # jetbrains.webstorm
-    # jetbrains.clion
+    jetbrains.webstorm
+    jetbrains.clion
 
     # File Manager from KDE (something that does not work in Thunar works here)
     kdePackages.dolphin
