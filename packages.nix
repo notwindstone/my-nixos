@@ -4,10 +4,13 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.niri.enable = true;
-  programs.throne.enable = true;
   programs.firefox.enable = true;
   programs.htop.enable = true;
   programs.vscode.enable = true;
+  programs.throne = {
+    enable = true;
+    tunMode.enable = true;
+  };
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs; [
@@ -47,6 +50,7 @@
     ayugram-desktop
     discord
     obsidian
+    p7zip
 
     # Games
     steam-run
