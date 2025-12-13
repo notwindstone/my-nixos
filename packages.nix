@@ -50,7 +50,6 @@
     ayugram-desktop
     discord
     obsidian
-    p7zip
 
     # Games
     steam-run
@@ -88,6 +87,8 @@
     pfetch
 
     # CLI utilities
+    unrar
+    p7zip
     gh
     git
     nethogs
