@@ -5,3 +5,11 @@ I did not spent more than ten hours on this, yet I still love what results I got
 ## Screenshots
 
 <img alt="Desktop screen" src="screenshots/desktop-screen.png" />
+
+## Tools
+
+- Tiling Manager: Niri
+- Session: Wayland
+- Shell: Noctalia
+- Terminal: Alacritty
+- File Manager: Dolphin & Thunar
