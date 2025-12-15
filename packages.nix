@@ -70,7 +70,6 @@
     # Coding
     bun
     nodejs
-    mold
     jetbrains.idea-community-bin
     jetbrains.webstorm
     jetbrains.clion
