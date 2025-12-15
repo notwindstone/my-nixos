@@ -49,7 +49,6 @@
     # General
     ayugram-desktop
     discord
-    gparted
     obsidian
 
     # Games
@@ -71,6 +70,7 @@
     # Coding
     bun
     nodejs
+    mold
     jetbrains.idea-community-bin
     jetbrains.webstorm
     jetbrains.clion
@@ -88,6 +88,9 @@
     # System fetches
     nitch
     pfetch
+
+    # System GUI utilities
+    gparted
 
     # CLI utilities
     unrar
