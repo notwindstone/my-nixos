@@ -5,8 +5,6 @@ in
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
     rustc
-    nodejs
-    bun
     cargo
     cargo-tauri
     pkg-config

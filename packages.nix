@@ -49,6 +49,7 @@
     # General
     ayugram-desktop
     discord
+    gparted
     obsidian
 
     # Games
@@ -68,6 +69,8 @@
     quartus-prime-lite
 
     # Coding
+    bun
+    nodejs
     jetbrains.idea-community-bin
     jetbrains.webstorm
     jetbrains.clion
