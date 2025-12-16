@@ -3,6 +3,11 @@
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+overview {
+    zoom 0.5
+    backdrop-color "#3e4450"
+}
+
 prefer-no-csd
 
 environment {
