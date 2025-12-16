@@ -11,6 +11,9 @@
   # File thumbnails in Thunar
   services.tumbler.enable = true;
 
+  # v2ray client
+  services.v2raya.enable = true;
+
   # Key remapping daemon
   services.keyd = {
     enable = true;

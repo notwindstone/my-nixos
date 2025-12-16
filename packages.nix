@@ -50,7 +50,7 @@
     ayugram-desktop
     discord
     obsidian
-    v2rayn
+    v2raya
 
     # Games
     steam-run
