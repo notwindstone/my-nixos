@@ -14,6 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.quickshell.follows = "quickshell";
     };
+    freesmlauncher = {
+      url = "github:FreesmTeam/FreesmLauncher/refactor/hardening-flags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {

@@ -54,6 +54,7 @@
 
     # Games
     steam-run
+    inputs.freesmlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Noctalia shell
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
