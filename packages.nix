@@ -51,6 +51,7 @@
     discord
     obsidian
     v2raya
+    krita
 
     # Games
     steam-run

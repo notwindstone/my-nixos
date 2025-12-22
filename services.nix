@@ -1,4 +1,7 @@
 {
+  # AMD GPU configuration
+  # services.xserver.videoDrivers = [ "amdgpu" ];
+
   # Performance profiles management
   services.tuned.enable = true;
 

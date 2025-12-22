@@ -4,6 +4,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # AMG GPU configurations
+  # boot.initrd.kernelModules = [ "amdgpu" ];
+
   # Xanmod Kernel
   # boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
