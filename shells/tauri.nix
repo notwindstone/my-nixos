@@ -24,9 +24,9 @@ pkgs.mkShell {
     cairo
     gdk-pixbuf
   ];
-  shellHook = ''
-    export GDK_BACKEND=x11
-  '';
+  # shellHook = ''
+  #   export GDK_BACKEND=x11
+  # '';
   # export WEBKIT_DISABLE_COMPOSITING_MODE=1
   # export WEBKIT_DISABLE_DMABUF_RENDERER=1
   # export GIO_MODULE_DIR=${pkgs.glib-networking}/lib/gio/modules/

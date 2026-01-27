@@ -3,6 +3,7 @@
   # Unfree software
   nixpkgs.config.allowUnfree = true;
 
+  programs.xwayland.enable = true;
   programs.niri.enable = true;
   programs.firefox.enable = true;
   programs.htop.enable = true;
@@ -95,6 +96,7 @@
     gparted
 
     # CLI utilities
+    xwayland-run
     unrar
     p7zip
     gh

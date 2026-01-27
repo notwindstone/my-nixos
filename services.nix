@@ -2,6 +2,14 @@
   # AMD GPU configuration
   # services.xserver.videoDrivers = [ "amdgpu" ];
 
+  # Add support for headphones
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
   # Performance profiles management
   services.tuned.enable = true;
 
