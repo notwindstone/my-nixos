@@ -15,7 +15,7 @@
       inputs.quickshell.follows = "quickshell";
     };
     freesmlauncher = {
-      url = "github:FreesmTeam/FreesmLauncher/refactor/hardening-flags";
+      url = "github:FreesmTeam/FreesmLauncher/develop";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
