@@ -340,10 +340,10 @@ window-rule {
 }
 
 // Can be set in the alacritty.toml
-// window-rule {
-//     match app-id="Alacritty"
-//     opacity 0.85
-// }
+window-rule {
+    match app-id="Alacritty"
+    opacity 0.85
+}
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
