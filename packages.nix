@@ -30,6 +30,7 @@
     shellAliases = {
       # Make an 'update' command run a build with 'nix-output-monitor'
       update = "sudo nixos-rebuild switch |& nom";
+      uoh = "echo starting correction💢💢 && sudo nixos-rebuild switch |& nom";
     };
 
     # Shell customizations

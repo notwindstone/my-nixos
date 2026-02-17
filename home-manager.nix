@@ -24,6 +24,7 @@ in
     shell = pkgs.zsh;
   };
   home-manager.users.windstone = { pkgs, ... }: {
+    home.enableNixpkgsReleaseCheck = false;
     home.packages = [];
 
     # Overwrite the mouse cursor

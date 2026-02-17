@@ -3,11 +3,11 @@
     "flake-compat": {
       "flake": false,
       "locked": {
-        "lastModified": 1765121682,
-        "narHash": "sha256-4VBOP18BFeiPkyhy9o4ssBNQEvfvv1kXkasAYd0+rrA=",
+        "lastModified": 1767039857,
+        "narHash": "sha256-vNpUSpF5Nuw8xvDLj2KCwwksIbjua2LZCqhV1LNRDns=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "65f23138d8d09a92e30f1e5c87611b23ef451bf3",
+        "rev": "5edf11c44bc78a0d334f6334cdaf7d60d732daab",
         "type": "github"
       },
       "original": {
@@ -26,16 +26,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1765917021,
-        "narHash": "sha256-4yQpjOqn/tFJYv4iaa+Os5K4rJc073uJX1bBd+f2TFI=",
+        "lastModified": 1770275530,
+        "narHash": "sha256-6HOj7fd+erpSQgjR+OuRXVN4yrg3IqoJazWSpuQTzHE=",
         "owner": "FreesmTeam",
         "repo": "FreesmLauncher",
-        "rev": "0369df8e75cc5f0583ffd3e32168d2a4af97fefb",
+        "rev": "30d4897630d52aee07d9f6e86bbf16c14169f38e",
         "type": "github"
       },
       "original": {
         "owner": "FreesmTeam",
-        "ref": "refactor/hardening-flags",
+        "ref": "develop",
         "repo": "FreesmLauncher",
         "type": "github"
       }
