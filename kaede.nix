@@ -1,8 +1,10 @@
+# AI-generated
 {
   lib,
   stdenv,
   fetchurl,
   dpkg,
+  autoPatchelfHook, # <--- ADDED: Fixes the stub-ld error
   wrapGAppsHook3,
   cairo,
   gdk-pixbuf,
@@ -12,6 +14,16 @@
   libsoup_3,
   pango,
   webkitgtk_4_1,
+  
+  # --- ADDED: Extra dependencies commonly needed by pre-compiled Tauri binaries ---
+  alsa-lib,                 # Audio support
+  libayatana-appindicator,  # System tray support
+  libxkbcommon,             # Keyboard input
+  openssl,                  # Networking/SSL
+  wayland,                  # Wayland support
+  xorg,                     # X11 support
+  libGL,                    # OpenGL/Graphics
+  dbus,                     # Desktop Bus
 }:
 
 stdenv.mkDerivation rec {
@@ -25,6 +37,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [
     dpkg
+    autoPatchelfHook  # <--- This patches the binary paths
     wrapGAppsHook3
   ];
 
@@ -37,9 +50,21 @@ stdenv.mkDerivation rec {
     libsoup_3
     pango
     webkitgtk_4_1
+    
+    # Added for autoPatchelfHook to satisfy dynamic linking:
+    alsa-lib
+    libayatana-appindicator
+    libxkbcommon
+    openssl
+    wayland
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXrandr
+    xorg.libXi
+    libGL
+    dbus
   ];
 
-  # Unpack the Debian package directly into the build directory
   unpackPhase = ''
     runHook preUnpack
     dpkg -x $src .
@@ -48,24 +73,24 @@ stdenv.mkDerivation rec {
 
   sourceRoot = ".";
 
-  # Move the extracted contents from /usr to the Nix store
   installPhase = ''
     runHook preInstall
 
     mkdir -p $out
     cp -r usr/* $out/
+    
+    # Ensure the binary has executable permissions
+    chmod +x $out/bin/kaede
 
     runHook postInstall
   '';
 
-  # Tauri apps (which Kaede is) often suffer from rendering glitches or crashes
-  # on Linux, especially under Wayland or with NVIDIA drivers.
-  # This environment variable fixes those issues.
-  preFixup = ''
-    gappsWrapperArgs+=(
-      --set WEBKIT_DISABLE_COMPOSITING_MODE "1"
-    )
-  '';
+  # Tauri apps often suffer from rendering glitches or black screens on Linux
+  #preFixup = ''
+  #  gappsWrapperArgs+=(
+  #    --set WEBKIT_DISABLE_COMPOSITING_MODE "1"
+  #  )
+  #'';
 
   meta = with lib; {
     description = "A Minecraft Launcher with plugins";

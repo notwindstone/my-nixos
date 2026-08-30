@@ -18,26 +18,16 @@
       url = "github:FreesmTeam/FreesmLauncher/develop";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    kaede = {
-      url = "path:/etc/nixos/kaede.nix";
-    };
   };
 
-  outputs = { self, nixpkgs, kaede, ... }@inputs: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.wind = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
       specialArgs = {
         inherit inputs;
       };
       modules = [
         ./configuration.nix
         ./packages.nix
-
-        ({ pkgs, ... }: {
-          environment.systemPackages = [
-            kaede.packages.x86_64-linux.default
-          ];
-        })
       ];
     };
   };

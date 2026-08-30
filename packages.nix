@@ -1,4 +1,8 @@
 { pkgs, inputs, ... }:
+
+let
+  kaede = pkgs.callPackage ./kaede.nix {};
+in
 {
   # Unfree software
   nixpkgs.config.allowUnfree = true;
@@ -17,6 +21,10 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
+  };
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk21;
   };
   programs.thunar = {
     enable = true;
@@ -57,6 +65,7 @@
 
     # Games
     steam-run
+    kaede
     inputs.freesmlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Noctalia shell
