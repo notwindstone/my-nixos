@@ -10,6 +10,8 @@
   # Xanmod Kernel
   # boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Hide Stage 2 and further logs behind the NixOS logo
   boot.plymouth.enable = true;
 
