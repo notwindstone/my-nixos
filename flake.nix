@@ -11,7 +11,7 @@
     };
     freesmlauncher = {
       url = "github:FreesmTeam/FreesmLauncher/develop";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
