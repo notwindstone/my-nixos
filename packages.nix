@@ -84,7 +84,7 @@ in
     # Coding
     bun
     nodejs
-    jetbrains.idea-community-bin
+    jetbrains.idea-oss
     jetbrains.webstorm
     jetbrains.clion
 
