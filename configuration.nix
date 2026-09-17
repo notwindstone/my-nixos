@@ -13,6 +13,9 @@
       ./locale.nix
       ./networking.nix
       ./services.nix
+
+      # Noctalia was too bratty 💢💢💢
+      ./noctalia-cachix.nix
     ];
 
   # Flakes
