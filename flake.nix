@@ -7,7 +7,7 @@
     # These entries should have their own files (no clue how to do it)
     noctalia = {
       url = "github:noctalia-dev/noctalia";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     freesmlauncher = {
       url = "github:FreesmTeam/FreesmLauncher/develop";
