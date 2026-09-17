@@ -98,6 +98,10 @@ in
     # Some packages require this i.e. Electron-based
     xwayland-satellite
 
+    # Clipboard
+    wl-clipboard
+    cliphist
+
     # System fetches
     nitch
     pfetch

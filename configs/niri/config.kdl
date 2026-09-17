@@ -10,6 +10,11 @@ overview {
 
 prefer-no-csd
 
+clipboard {
+    // We have the Wayland one
+    disable-primary
+}
+
 environment {
     XCURSOR_THEME "Blue-Archive-Millenium-Cursor"
     XCURSOR_SIZE "48"
