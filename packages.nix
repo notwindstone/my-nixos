@@ -95,7 +95,7 @@ in
     kdePackages.kio-extras
     kdePackages.qtsvg
 
-    # Some packages require this i.e. Electron-based
+    # Some packages require this, e.g., Electron-based ones
     xwayland-satellite
 
     # Clipboard
@@ -107,9 +107,11 @@ in
     pfetch
 
     # System GUI utilities
+    alsa-utils
     gparted
 
     # CLI utilities
+    mpvpaper
     xwayland-run
     unrar
     p7zip
@@ -121,3 +123,4 @@ in
     unzip
   ];
 }
+
