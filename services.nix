@@ -55,6 +55,7 @@
   # Gnome Display Manager
   services.displayManager.gdm = {
     enable = true;
-    wayland = true;
+    # Apparently, GDM is Wayland-only now
+    # wayland = true;
   };
 }
