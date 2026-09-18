@@ -220,7 +220,7 @@ layout {
         width 2
         active-color "#ffb0d1"
         // active-color "#88c0d0"
-        inactive-color "#3e4550"
+        inactive-color "#503e3e"
 
         // Color of the border around windows that request your attention.
         urgent-color "#ff9988"
