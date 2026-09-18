@@ -31,10 +31,10 @@ stdenv.mkDerivation rec {
   version = "0.0.1";
 
   src = fetchurl {
-    url = "https://download1351.mediafire.com/u6cby1czm5qgGkZJ9_h2IQhRzN9d1XGCLIkIadJax0jvoEAYsD5H9uCxy2qhIQA3PXsue6XRKmUWcfooVMdsV3GgX9200lBLLlxi13Gk3FPPyoh0Np4zUWp22t5I3qIMx2GxzLL5p6JIYNHVK3ipEL0J2o9E5zkrUIvM1gY2bdYC/bjiidrkzkrt4xr8/kaede_0.0.1_amd64.deb";
-    sha256 = "1fe1c1ff9cf18b706aecfb649e3c98dca27b16a7fdb022881fe2224c3427f3e3";
-    # url = "https://github.com/kaede-basement/kaede/releases/download/${version}/kaede_${version}_amd64.deb";
-    # sha256 = "0a8bb66e79d1a24922dc480c1ebc2b3fedd3bc804581df014d16446bc2b66918";
+    # url = "https://download1351.mediafire.com/u6cby1czm5qgGkZJ9_h2IQhRzN9d1XGCLIkIadJax0jvoEAYsD5H9uCxy2qhIQA3PXsue6XRKmUWcfooVMdsV3GgX9200lBLLlxi13Gk3FPPyoh0Np4zUWp22t5I3qIMx2GxzLL5p6JIYNHVK3ipEL0J2o9E5zkrUIvM1gY2bdYC/bjiidrkzkrt4xr8/kaede_0.0.1_amd64.deb";
+    # sha256 = "1fe1c1ff9cf18b706aecfb649e3c98dca27b16a7fdb022881fe2224c3427f3e3";
+    url = "https://github.com/kaede-basement/kaede/releases/download/${version}/kaede_${version}_amd64.deb";
+    sha256 = "0a8bb66e79d1a24922dc480c1ebc2b3fedd3bc804581df014d16446bc2b66918";
   };
 
   nativeBuildInputs = [

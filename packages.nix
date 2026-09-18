@@ -84,9 +84,9 @@ in
     # Coding
     bun
     nodejs
-    jetbrains.idea
-    jetbrains.webstorm
-    jetbrains.clion
+    #jetbrains.idea
+    #jetbrains.webstorm
+    #jetbrains.clion
 
     # File Manager from KDE (something that does not work in Thunar works here)
     kdePackages.dolphin
