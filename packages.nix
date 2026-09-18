@@ -79,12 +79,12 @@ in
     onlyoffice-desktopeditors
 
     # University
-    quartus-prime-lite
+    # quartus-prime-lite
 
     # Coding
     bun
     nodejs
-    jetbrains.idea-oss
+    jetbrains.idea
     jetbrains.webstorm
     jetbrains.clion
 
