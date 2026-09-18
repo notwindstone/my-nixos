@@ -5,7 +5,7 @@
 
 overview {
     zoom 0.5
-    backdrop-color "#3e4450"
+    backdrop-color "#251d20"
 }
 
 prefer-no-csd
@@ -186,7 +186,8 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
+        // active-color "#7fc8ff"
+        active-color "#ffb0d1"
 
         // Color of the ring on inactive monitors.
         //
@@ -217,7 +218,8 @@ layout {
         // off
 
         width 2
-        active-color "#88c0d0"
+        active-color "#ffb0d1"
+        // active-color "#88c0d0"
         inactive-color "#3e4550"
 
         // Color of the border around windows that request your attention.
