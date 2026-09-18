@@ -3,7 +3,7 @@
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
         "enableClipPreview": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "pinnedExecs": [
         ],
         "position": "center",
@@ -14,7 +14,7 @@
         "viewMode": "list"
     },
     "audio": {
-        "cavaFrameRate": 30,
+        "cavaFrameRate": 60,
         "externalMixer": "pwvucontrol || pavucontrol",
         "mprisBlacklist": [
         ],
@@ -135,6 +135,9 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
+                },
+                {
+                    "id": "plugin:clipboard"
                 }
             ]
         }
@@ -164,18 +167,15 @@
             }
         ]
     },
-    "changelog": {
-        "lastSeenVersion": ""
-    },
     "colorSchemes": {
         "darkMode": true,
         "generateTemplatesForPredefined": true,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-fruit-salad",
+        "matugenSchemeType": "scheme-tonal-spot",
         "predefinedScheme": "Nord",
         "schedulingMode": "off",
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -235,21 +235,26 @@
     "dock": {
         "backgroundOpacity": 1,
         "colorizeIcons": false,
+        "deadOpacity": 0.6,
         "displayMode": "auto_hide",
         "enabled": true,
         "floatingRatio": 1,
+        "inactiveIndicators": true,
         "monitors": [
         ],
         "onlySameOutput": true,
         "pinnedApps": [
+            "webstorm",
+            "com.ayugram.desktop"
         ],
+        "pinnedStatic": false,
         "size": 1
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
         "animationSpeed": 1,
-        "avatarImage": "/home/windstone/.face",
+        "avatarImage": "/home/windstone/Downloads/__aris_and_kei_blue_archive_drawn_by_rururiiro__c7425f9afb8e8f70bddea2f78b2c7a17(1).jpg",
         "boxRadiusRatio": 1,
         "compactLockScreen": false,
         "dimmerOpacity": 0.4,
@@ -265,7 +270,8 @@
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
         "showHibernateOnLockScreen": false,
-        "showScreenCorners": false
+        "showScreenCorners": false,
+        "showSessionButtonsOnLockScreen": true
     },
     "hooks": {
         "darkModeChange": "",
@@ -307,7 +313,16 @@
         ],
         "normalUrgencyDuration": 8,
         "overlayLayer": true,
-        "respectExpireTimeout": false
+        "respectExpireTimeout": false,
+        "sounds": {
+            "criticalSoundFile": "",
+            "enabled": false,
+            "excludedApps": "discord,firefox,chrome,chromium,edge",
+            "lowSoundFile": "",
+            "normalSoundFile": "",
+            "separateSounds": false,
+            "volume": 0.5
+        }
     },
     "osd": {
         "autoHideMs": 2000,
@@ -398,7 +413,7 @@
         "warningColor": "#5e81ac"
     },
     "templates": {
-        "alacritty": false,
+        "alacritty": true,
         "cava": false,
         "code": true,
         "discord": false,
@@ -407,12 +422,12 @@
         "foot": false,
         "fuzzel": true,
         "ghostty": false,
-        "gtk": false,
+        "gtk": true,
         "kcolorscheme": false,
         "kitty": false,
         "niri": true,
         "pywalfox": false,
-        "qt": false,
+        "qt": true,
         "spicetify": false,
         "telegram": false,
         "vicinae": false,
