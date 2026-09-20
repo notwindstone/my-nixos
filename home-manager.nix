@@ -47,7 +47,7 @@ in
       in
         getFrom
           "https://github.com/notwindstone/BlueArchive-Cursors/archive/refs/heads/main.zip"
-          "sha256-LLfv0tNbfYOedSzyknFcX70BrNCX2QxcrHGMa09k6Gk="
+          "sha256-d6PzFGDbFuzKm86WdjTHr5KkX58mellouWWCIPRldSM="
           "Blue-Archive-Millenium-Cursor";
 
     # The state version is required and should stay at the version you
