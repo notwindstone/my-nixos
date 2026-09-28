@@ -111,6 +111,7 @@ in
     gparted
 
     # CLI utilities
+    codex
     mpvpaper
     xwayland-run
     unrar
