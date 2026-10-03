@@ -59,6 +59,7 @@ in
     # General
     ayugram-desktop
     discord
+    google-chrome
     obsidian
     v2raya
     krita
@@ -112,6 +113,7 @@ in
 
     # CLI utilities
     codex
+    claude-code
     mpvpaper
     xwayland-run
     unrar
