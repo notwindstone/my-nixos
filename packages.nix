@@ -114,6 +114,9 @@ in
     # CLI utilities
     codex
     claude-code
+    hyperfine
+    python3
+    perf
     mpvpaper
     xwayland-run
     unrar
